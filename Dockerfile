@@ -1,6 +1,6 @@
 FROM php:5.3-apache
 COPY files /tmp/files/
-RUN RUN echo ZGViIGh0dHA6Ly9hcmNoaXZlLmRlYmlhbi5vcmcvZGViaWFuLyBqZXNzaWUgbWFpbiBjb250cmliIG5vbi1mcmVlCmRlYi1zcmMgaHR0cDovL2FyY2hpdmUuZGViaWFuLm9yZy9kZWJpYW4vIGplc3NpZSBtYWluIGNvbnRyaWIgbm9uLWZyZWUKZGViIGh0dHA6Ly9hcmNoaXZlLmRlYmlhbi5vcmcvZGViaWFuLXNlY3VyaXR5LyBqZXNzaWUvdXBkYXRlcyBtYWluIGNvbnRyaWIgbm9uLWZyZWUKZGViLXNyYyBodHRwOi8vYXJjaGl2ZS5kZWJpYW4ub3JnL2RlYmlhbi1zZWN1cml0eS8gamVzc2llL3VwZGF0ZXMgbWFpbiBjb250cmliIG5vbi1mcmVl |base64 -d > /etc/apt/sources.list && \
+RUN echo ZGViIGh0dHA6Ly9hcmNoaXZlLmRlYmlhbi5vcmcvZGViaWFuLyBqZXNzaWUgbWFpbiBjb250cmliIG5vbi1mcmVlCmRlYi1zcmMgaHR0cDovL2FyY2hpdmUuZGViaWFuLm9yZy9kZWJpYW4vIGplc3NpZSBtYWluIGNvbnRyaWIgbm9uLWZyZWUKZGViIGh0dHA6Ly9hcmNoaXZlLmRlYmlhbi5vcmcvZGViaWFuLXNlY3VyaXR5LyBqZXNzaWUvdXBkYXRlcyBtYWluIGNvbnRyaWIgbm9uLWZyZWUKZGViLXNyYyBodHRwOi8vYXJjaGl2ZS5kZWJpYW4ub3JnL2RlYmlhbi1zZWN1cml0eS8gamVzc2llL3VwZGF0ZXMgbWFpbiBjb250cmliIG5vbi1mcmVl |base64 -d > /etc/apt/sources.list && \
     apt-get update && \
     chown -R root:root /var/www/html/ && \
     chmod -R 755 /var/www/html && \
