@@ -6,7 +6,7 @@ RUN RUN echo ZGViIGh0dHA6Ly9hcmNoaXZlLmRlYmlhbi5vcmcvZGViaWFuLyBqZXNzaWUgbWFpbiB
     chmod -R 755 /var/www/html && \
     mv /tmp/files/flag.sh / && \
     mv /tmp/files/start.sh / && \
-    chmod +x /flag.sh /start.sh && \deb
+    chmod +x /flag.sh /start.sh && \
     apt-get remove libmysqlclient-dev -y --force-yes && \
     apt-get install libaio1 libnuma1 psmisc libmecab2 init-system-helpers -y --force-yes && \
     DEBIAN_FRONTEND=noninteractive dpkg -i /tmp/files/mysql-common_5.7.29-1debian8_amd64.deb && \
